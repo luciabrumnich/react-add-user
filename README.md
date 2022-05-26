@@ -1,4 +1,4 @@
-# React: The complete guide
+# create-react-app + tailwindcss
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
