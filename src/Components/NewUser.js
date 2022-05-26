@@ -9,7 +9,7 @@ function NewUser(props) {
     props.onAddUser(userData);
   };
   return (
-    <div>
+    <div className="bg-green-500">
       <UserForm onSaveUserData={saveUserDataHandler} />
     </div>
   );

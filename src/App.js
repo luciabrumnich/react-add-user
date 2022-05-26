@@ -17,8 +17,7 @@ function App() {
   };
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">react-add-user</h1>
+    <div className="bg-black text-white m-36">
       <NewUser onAddUser={addUserHandler} />
       <UsersList items={users} />
     </div>
