@@ -6,7 +6,7 @@ function UsersList(props) {
     <div className='bg-white w-4/6 rounded-2xl'>
       <ul className='space-y-4 p-5'>
         {props.items.map((user) => (
-          <UserItem name={user.name} age={user.age} />
+          <UserItem name={user.name} age={user.age} key={user.id}/>
         ))}
       </ul>
     </div>
