@@ -3,11 +3,9 @@ import React from "react";
 function UserItem(props) {
   return (
     <li>
-      <div>
-        <h3 className="text-gray-800 font-bold border p-2 rounded-md">
-          {props.name} ({props.age} years old).
-        </h3>
-      </div>
+      <h3 className="text-gray-800 font-bold border p-2 rounded-md">
+        {props.name} ({props.age} years old).
+      </h3>
     </li>
   );
 }

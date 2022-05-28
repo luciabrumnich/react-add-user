@@ -2,17 +2,17 @@ import NewUser from "./Components/UserForm";
 import UsersList from "./Components/UsersList";
 import { useState } from "react";
 
-const initial_users = [
+/* const initial_users = [
   { name: "Lu", age: "35" },
   { name: "Fran", age: "28" },
   { name: "Nube", age: "6" },
-];
+]; */
 function App() {
-  const [users, setUsers] = useState(initial_users);
+  const [users, setUsers] = useState([]);
 
-  const addUserHandler = (user) => {
+  const addUserHandler = (userName, userAge) => {
     setUsers((prevUsers) => {
-      return [user, ...prevUsers];
+      return [...prevUsers, {name: userName, age: userAge}];
     });
   };
 

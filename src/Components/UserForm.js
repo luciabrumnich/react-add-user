@@ -20,15 +20,9 @@ function UserForm(props) {
     if (+enteredAge < 1) {
       return;
     }
-    console.log(enteredName, enteredAge);
+    props.onAddUser(enteredName, enteredAge);
     setEnteredName("");
     setEnteredAge("");
-    /* const userData = {
-      name: enteredName,
-      age: enteredAge,
-    }; */
-
-    /* props.onSaveUserData(userData);*/
   };
 
   return (
